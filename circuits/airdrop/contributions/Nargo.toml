@@ -1,0 +1,9 @@
+[package]
+name = "Contributions"
+version = "1.0.0-beta.6"
+type = "bin"
+authors = ["Tisura"]
+
+[dependencies]
+airdrop = { path = "../lib" }
+json_parser = { tag = "v0.4.0", git = "https://github.com/noir-lang/noir_json_parser" }
