@@ -1,0 +1,9 @@
+[package]
+name = "airdrop"
+version = "1.0.0-beta.6"
+type = "lib"
+authors = ["Tisura"]
+
+[dependencies]
+keccak256 = { tag = "v0.1.0", git = "https://github.com/noir-lang/keccak256" }
+chacha20 = { path = "../../substring/lib" }

@@ -1,0 +1,28 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib", "dependencies"]
+fs_permissions = [
+    { access = "read-write", path = "../circuits/ownership/target/" },
+    { access = "read-write", path = "../circuits/contributions/target/" },
+]
+optimizer = true
+optimizer_runs = 200000 # High optimization for deployment size
+
+[rpc_endpoints]
+sepolia = "${SEPOLIA_URL}"
+base-sepolia = "${BASE_SEPOLIA_URL}"
+
+[etherscan]
+sepolia = { key = "${SEPOLIA_KEY}" }
+base-sepolia = { key = "${BASE_SEPOLIA_KEY}" }
+
+[dependencies]
+forge-std = "1.9.7"
+"@openzeppelin-contracts" = "5.0.2"
+
+[soldeer]
+remappings_generate = true
+remappings_version = false
+
+# See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options

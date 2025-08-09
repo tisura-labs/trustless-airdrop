@@ -1,0 +1,9 @@
+[package]
+name = "chacha20_decrypt"
+version = "1.0.0-beta.6"
+type = "bin"
+authors = ["Tisura"]
+
+[dependencies]
+chacha20 = { path = "../lib" }
+string_search = { tag = "v0.3.3", git = "https://github.com/noir-lang/noir_string_search" }
